@@ -11,5 +11,4 @@ RUN curl https://api.github.com/repos/balena-io/wifi-connect/releases/latest -s 
     | xargs -n1 curl -Ls \
     | tar -xvz -C /usr/app/src/
 
-# Setting up the user application
-COPY ./start.sh /usr/app/src/start.sh
+COPY --chown=service:service ./src/start.sh /usr/app/src/start.sh
