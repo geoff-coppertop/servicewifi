@@ -1,4 +1,10 @@
-# wifi-connect
+# Wifi Connect Service
+
+![Wifi Service Build/Publish](https://github.com/geoff-coppertop/servicewifi/workflows/Wifi%20Service%20Build/Publish/badge.svg)
+
+Docker image for a service that creates a captive portal for connecting to wifi if necessary.
+
+## References
 
  - <https://github.com/balenalabs/balena-sound/issues/54>
  - <http://www.kaizou.org/2014/06/dbus-command-line.html>
