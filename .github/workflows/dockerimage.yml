@@ -1,8 +1,6 @@
 name: Wifi Service Build/Publish
 
 on:
-    schedule:
-        - cron: '0 3 * * *' # everyday at 3am
     pull_request:
         branches: master
     push:
@@ -12,7 +10,7 @@ on:
     repository_dispatch:
 
 jobs:
-    servicewifi:
+    build:
         runs-on: ubuntu-latest
 
         steps:
